@@ -6,26 +6,49 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="//fonts.googleapis.com/css?family=Akaya Telivigala&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Josefin Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/affichage.css' %}">
     </head>
     <body>
         <div class = "page-header">
-            <h1><a href="/">Affiches Foodprint par restaurant universitaire</a></h1>
+            <h1><a href="/">Foodprint Grenoble</a></h1>
+            <h3><a href="/">Empreintes carbone du jour</a></h3>
         </div>
-        <div class="content container">
+        <div class="container">
             <div class="row">
-                <div class="col-md-8">
-
+                <div class="col-md-4">
 					<div class="affiche">
-	        			<h2><a href=""> <p>Affiche base</p> </a></h2>
-	        			<img src="{% static "/media/Base.png" %}" HEIGHT=270 WIDTH=480/>
+	        			<h2> <p>RU Green</p> </h2>
+	        			<img src="{% static "/media/Green.png" %}" HEIGHT=180 WIDTH=320/>
 	    			</div>
+	    		</div>
 
+	    		<div class="col-md-4">
 	    			<div class="affiche">
-	        			<h2><a href=""> <p>RU Diderot</p> </a></h2>
-	        			<img src="{% static "/media/AfficheDiderot.jpg" %}" HEIGHT=270 WIDTH=480/>
+	        			<h2> <p>RU Minatec</p> </h2>
+	        			<img src="{% static "/media/Minatec.png" %}" HEIGHT=180 WIDTH=320/>
 	    			</div>
+	    		</div>
 
+	    		<div class="col-md-4">
+	    			<div class="affiche">
+	        			<h2> <p>RU Arsonval</p> </h2>
+	        			<img src="{% static "/media/Arsonval.png" %}" HEIGHT=180 WIDTH=320/>
+	    			</div>
+	    		</div>
+
+	    		<div class="col-md-4">
+	    			<div class="affiche">
+	        			<h2> <p>RU Diderot</p> </h2>
+	        			<img src="{% static "/media/Diderot.png" %}" HEIGHT=180 WIDTH=320/>
+	    			</div>
+	    		</div>
+
+	    		<div class="col-md-4">
+					<div class="affiche">
+	        			<h2> <p>RU Intermezzo</p> </h2>
+	        			<img src="{% static "/media/Intermezzo.png" %}" HEIGHT=180 WIDTH=320/>
+	    			</div>
                 </div>
             </div>
         </div>
