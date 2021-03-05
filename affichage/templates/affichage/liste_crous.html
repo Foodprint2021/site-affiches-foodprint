@@ -1,0 +1,33 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Foodprint Grenoble</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Akaya Telivigala&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/affichage.css' %}">
+    </head>
+    <body>
+        <div class = "page-header">
+            <h1><a href="/">Affiches Foodprint par restaurant universitaire</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+
+					<div class="affiche">
+	        			<h2><a href=""> <p>Affiche base</p> </a></h2>
+	        			<img src="{% static "/media/Base.png" %}" HEIGHT=270 WIDTH=480/>
+	    			</div>
+
+	    			<div class="affiche">
+	        			<h2><a href=""> <p>RU Diderot</p> </a></h2>
+	        			<img src="{% static "/media/AfficheDiderot.jpg" %}" HEIGHT=270 WIDTH=480/>
+	    			</div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

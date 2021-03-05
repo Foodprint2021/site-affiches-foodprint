@@ -5,11 +5,9 @@ from django.utils import timezone
 
 class Affiche(models.Model):
     title = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='images')
-    date = models.DateTimeField(blank=True, null=True)
+    image = models.ImageField(upload_to='')
 
     def publish(self):
-        self.published_date = timezone.now()
         self.save()
 
     def __str__(self):
