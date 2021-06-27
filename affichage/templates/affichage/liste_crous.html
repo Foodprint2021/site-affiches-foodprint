@@ -1,56 +1,66 @@
 {% load static %}
+<!DOCTYPE html>
 
 <html>
+
     <head>
         <title>Foodprint Grenoble</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="//fonts.googleapis.com/css?family=Akaya Telivigala&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Berlin Sans FB&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link href="//fonts.googleapis.com/css?family=Josefin Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/affichage.css' %}">
     </head>
+    
     <body>
-        <div class = "page-header">
+        <header class="page-header">
             <h1><a href="/">Foodprint Grenoble</a></h1>
-            <h3><a href="/">Empreintes carbone du jour</a></h3>
-        </div>
+            <h2><p>Empreintes carbone du jour</p></h2>
+        </header>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
+	    			<div class="affiche">
+	        			<h3> <p>RU Diderot</p> </h3>
+	        			<img src="{% static 'media/Diderot.png' %}" HEIGHT=180 WIDTH=320/>
+	    			</div>
+	    		</div>
+
+                <div class="col-md-4">
 					<div class="affiche">
-	        			<h2> <p>RU Green</p> </h2>
-	        			<img src="{% static "/media/Green.png" %}" HEIGHT=180 WIDTH=320/>
+	        			<h3> <p>RU Green</p> </h3>
+	        			<img src="{% static 'media/Green.png' %}" HEIGHT=180 WIDTH=320/>
 	    			</div>
 	    		</div>
 
 	    		<div class="col-md-4">
 	    			<div class="affiche">
-	        			<h2> <p>RU Minatec</p> </h2>
-	        			<img src="{% static "/media/Minatec.png" %}" HEIGHT=180 WIDTH=320/>
+	        			<h3> <p>RU Minatec</p> </h3>
+	        			<img src="{% static 'media/Minatec.png' %}" HEIGHT=180 WIDTH=320/>
 	    			</div>
 	    		</div>
 
 	    		<div class="col-md-4">
 	    			<div class="affiche">
-	        			<h2> <p>RU Arsonval</p> </h2>
-	        			<img src="{% static "/media/Arsonval.png" %}" HEIGHT=180 WIDTH=320/>
-	    			</div>
-	    		</div>
-
-	    		<div class="col-md-4">
-	    			<div class="affiche">
-	        			<h2> <p>RU Diderot</p> </h2>
-	        			<img src="{% static "/media/Diderot.png" %}" HEIGHT=180 WIDTH=320/>
+	        			<h3> <p>RU Arsonval</p> </h3>
+	        			<img src="{% static 'media/Arsonval.png' %}" HEIGHT=180 WIDTH=320/>
 	    			</div>
 	    		</div>
 
 	    		<div class="col-md-4">
 					<div class="affiche">
-	        			<h2> <p>RU Intermezzo</p> </h2>
-	        			<img src="{% static "/media/Intermezzo.png" %}" HEIGHT=180 WIDTH=320/>
+	        			<h3> <p>RU Intermezzo</p> </h3>
+	        			<img src="{% static 'media/Intermezzo.png' %}" HEIGHT=180 WIDTH=320/>
 	    			</div>
                 </div>
             </div>
         </div>
+
+        <footer class="bas-de-page">
+            <img src="{% static 'media/Logo.png' %}" HEIGHT=50/>
+        </footer>
+
     </body>
+
 </html>
