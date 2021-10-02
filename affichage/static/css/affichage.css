@@ -8,10 +8,6 @@ body {
     padding: 5px 20px 20px 40px;
 }
 
-.bas-de-page {
-    padding: 5px 20px 20px 1250px;
-}
-
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
     font-size: 42pt;
